@@ -13,22 +13,22 @@ struct Filme {
 
 
 void preencherFilme(struct Filme *filme) {
-    printf("\nTítulo: ");
+    printf("\nTÃ­tulo: ");
     fflush(stdin);
     fgets(filme->titulo, 100, stdin);
 
-    printf("Classificação: ");
+    printf("ClassificaÃ§Ã£o: ");
     scanf("%d", &filme->classificacao);
 
     printf("Diretor: ");
     fflush(stdin);
     fgets(filme->diretor, 50, stdin);
 
-    printf("Gênero: ");
+    printf("GÃªnero: ");
     fflush(stdin);
     fgets(filme->genero, 50, stdin);
 
-    printf("Duração: ");
+    printf("DuraÃ§Ã£o: ");
     fflush(stdin);
     fgets(filme->duracao, 20, stdin);
 }
@@ -42,13 +42,12 @@ int main() {
     printf("---------- Cadastro de Filme ----------\n");
     preencherFilme(&meuFilme);
 
-    // Saída de dados do Filme
-    printf("\n---------- Informações do Filme ----------\n");
-    printf("Título: %s", meuFilme.titulo);
-    printf("Classificação: %d\n", meuFilme.classificacao);
+    printf("\n---------- InformaÃ§Ãµes do Filme ----------\n");
+    printf("TÃ­tulo: %s", meuFilme.titulo);
+    printf("ClassificaÃ§Ã£o: %d\n", meuFilme.classificacao);
     printf("Diretor: %s", meuFilme.diretor);
-    printf("Gênero: %s", meuFilme.genero);
-    printf("Duração: %s", meuFilme.duracao);
+    printf("GÃªnero: %s", meuFilme.genero);
+    printf("DuraÃ§Ã£o: %s", meuFilme.duracao);
 
     return 0;
 }
