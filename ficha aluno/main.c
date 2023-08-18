@@ -2,7 +2,7 @@
 #include <conio.h>
 
 int main() {
-    // Criação da struct
+    
     struct FichaDeAluno {
         char nome[50];
         char disciplina[30];
@@ -29,7 +29,7 @@ int main() {
     fflush(stdin);
     fgets(aluno.email, 20, stdin);
 
-    printf("\nMatrícula:");
+    printf("\nMatrÃ­cula:");
     fflush(stdin);
     fgets(aluno.matricula, 20, stdin);
 
@@ -43,7 +43,7 @@ int main() {
     printf("\nInforme a nota da Prova 2:");
     scanf("%f", &aluno.nota_prova2);
 
-    // Saída de dados da Struct
+    // SaÃ­da de dados da Struct
     printf("----------------------Lendo os dados-------------------------------------");
     printf("\nNome: %s", aluno.nome);
     printf("Disciplina: %s", aluno.disciplina);
